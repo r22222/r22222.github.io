@@ -40,3 +40,26 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+#project-carousel {
+    text-align: center;
+    padding: 50px;
+}
+
+.carousel div {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.carousel a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.carousel a:hover {
+    color: #0066cc;
+}
