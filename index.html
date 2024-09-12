@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rocky Cowan Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
 </head>
 <body>
     <header>
@@ -17,18 +19,34 @@
         <p>Full-stack developer passionate about game development and hardware-software integration.</p>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="https://github.com/GomeChas/JHAIWT">Job Hunting AI Web Tool (JHAIWT)</a></li>
-            <li>Motorcycle Racing Game (coming soon)</li>
-            <li>Open Source Insurance Pricing (coming soon)</li>
-        </ul>
+    <section id="project-carousel">
+        <h2>Featured Projects</h2>
+        <div class="carousel">
+            <div><a href="https://github.com/GomeChas/JHAIWT">Job Hunting AI Web Tool</a></div>
+            <div><a href="#">Motorcycle Racing Game (coming soon)</a></div>
+            <div><a href="#">Open Source Insurance Pricing (coming soon)</a></div>
+            <!-- More projects can be added here -->
+        </div>
     </section>
 
     <footer>
         <p>Contact: <a href="mailto:cowan.jrc@gmail.com">cowan.jrc@gmail.com</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/rocky-cowan-a82529239/">Rocky Cowan</a></p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('.carousel').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: true
+        });
+    });
+    </script>
 </body>
 </html>
